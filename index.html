@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop for your store oline at Raulson</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body onload="show()">
+  <div class="container">
+    <div class="content">
+      <div class="nav">
+        <div class="logo"></div>
+        <div class="disp-logo">
+          <div class="null"></div>
+          <div class="logo-txt">RAULSON</div>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Search Mobiles, Fashion, Medicines and more..." /><span class="src-icon"><i
+              class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+        <div class="sell">
+          <a href="#">
+            <div class="become-seller">
+              <div id="sell-icon">
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <div id="sell-text">Become a Seller</div>
+            </div>
+          </a>
+        </div>
+        <div class="login">
+          <img src="images/profile-user.png" alt="">
+          <h6>Login</h6>
+        </div>
+        <div class="cartreturn">
+          <div class="returnorder"><i class="fa-solid fa-cart-plus"></i></div>
+          <!-- retrn and order -->
+          <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
+        </div>
+      </div>
+      <div id="searchln"><input type="text" placeholder="search" /></div>
+      <div class="options">
+        <ul>
+          <li>Grocery</li>
+          <li>Kitchen</li>
+          <li>Electronics</li>
+          <li>Appliances</li>
+          <li>Mobiles</li>
+          <li>kids</li>
+          <li>Fashion</li>
+          <li>Medicines</li>
+          <li>Beauty and,More...</li>
+        </ul>
+      </div>
+
+      <!---------------------- banner section ---------------------->
+      <!---------------------- banner section ---------------------->
+      <!---------------------- banner section ---------------------->
+
+      <div class="banner">
+        <div class="banner-content">
+          <div class="banner-left">
+            <div class="slider">
+
+
+              <div class="wrapper">
+                <!-- Main Container -->
+
+                <div class="box">
+                  <!-- Div that will hold the UL -->
+                  <div class="scroll">
+                    <ul>
+                      <li><img src="images/shoes.jpg"></li>
+                      <li><img src="images/girl.jpg"></li>
+                      <li><img src="images/iphone.png"></li>
+                      <li><img src="images/Clothes.jpg"></li>
+                      <li><img src="images/F Shoes Image.jpg"></li>
+                      <li><img src="images/Teddy Image.jpg"></li>
+                      <li><img src="images/Shoes Imagejpg.jpg"></li>
+
+                    </ul>
+                  </div>
+                </div><!-- End Box -->
+                <script>
+                  (function () {
+
+                    function scroller() {
+
+                      var scroll = $('div.scroll'); // Sets the div with a class of scroll as a variable
+
+                      var height = scroll.height(); // Gets the height of the scroll div
+
+                      var topAdj = -height - 60;
+                      /* '-height' turns the height                   of the UL into a negative #, 
+                       * '- 50' subtracts an extra 50 pixels from the height of 
+                       * the div so that it moves the trail of the UL higher to 
+                       * the top of the div before the animation                ends
+                       */
+
+                      scroll.animate({
+                        'top': [topAdj, 'linear']
+                      }, 8000, function () {
+                        scroll.css('top', 80); //resets the top position of the Ul for the next cycle
+                        scroller(); // Recalls the animation cycle to begin.
+                      });
+                    }
+
+                    scroller();
+
+                  })();
+                </script>
+
+              </div><!-- End Main Container -->
+            </div>
+          </div>
+          <div class="banner-mid">
+            <div class="banner-txt">India's largest E-commerce platform</div>
+            <div class="larg-ecom-img">
+              <img src="images/ecommerce.png" alt="India's largest e-commerce platform" />
+            </div>
+          </div>
+          <div class="banner-right">
+            <img src="images/man.jpg" alt="standing man" />
+          </div>
+        </div>
+      </div>
+
+      <!-- carouser button          -->
+      <!-- carouser button          -->
+      <!-- carouser button          -->
+
+      <section class="product">
+        <h2 class="product-category">best selling</h2>
+        <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
+        <div class="product-container">
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img src="images/iphone.png" class="product-thumb" alt="">
+              <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">brand</h2>
+              <p class="product-short-description">a short line about the cloth..</p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img src="images/girl.jpg" class="product-thumb" alt="">
+              <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">brand</h2>
+              <p class="product-short-description">a short line about the cloth..</p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img src="images/shoes.jpg" class="product-thumb" alt="">
+              <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">brand</h2>
+              <p class="product-short-description">a short line about the cloth..</p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img src="images/bedsheet.png" class="product-thumb" alt="">
+              <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">brand</h2>
+              <p class="product-short-description">a short line about the cloth..</p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img src="images/laptop.png" class="product-thumb" alt="">
+              <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">brand</h2>
+              <p class="product-short-description">a short line about the cloth..</p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img src="images/mixer.png" class="product-thumb" alt="">
+              <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">brand</h2>
+              <p class="product-short-description">a short line about the cloth..</p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img src="images/led.png" class="product-thumb" alt="">
+              <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">brand</h2>
+              <p class="product-short-description">a short line about the cloth..</p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img src="images/medicine.png" class="product-thumb" alt="">
+              <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">brand</h2>
+              <p class="product-short-description">a short line about the cloth..</p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img src="images/fruits.png" class="product-thumb" alt="">
+              <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">brand</h2>
+              <p class="product-short-description">a short line about the cloth..</p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <span class="discount-tag">50% off</span>
+              <img src="images/Teddy Image.jpg" class="product-thumb" alt="">
+              <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+              <h2 class="product-brand">brand</h2>
+              <p class="product-short-description">a short line about the cloth..</p>
+              <span class="price">$20</span><span class="actual-price">$40</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section3 -->
+
+      <div class="working-container">
+        <div class="working-img">
+          <img src="images/compWorking.png" alt="working">
+        </div>
+
+
+        <!-- <div class="working-content">
+          <img class="free-arrow" src="images/arrow1.png" alt="arrow">
+          <img class="arrow2" src="images/arrow1.png" alt="arrow">  
+          <img class="arrow3" src="images/arrow1.png" alt="arrow">
+          <div class="start">
+            <span>1</span>
+            
+            <img src="images/Browse&Shop.jpg" alt="Browse&Shop">
+            <h4>Brows and Shop</h4>
+            <p>Retailer can browse the app,  find the desired product and order  </p>
+          </div>
+
+          
+
+
+          <div class="start">
+            <span>2</span>
+            <img src="images/Delivered on time 4.jpg" alt="Delivered on time ">
+            <h4>Delivered on time</h4>
+            <p>Retailer can browse the app,  find the desired product and order  </p>
+          </div>
+
+          
+
+
+          <div class="start">
+            <span>3</span>
+            <img src="images/Enroute Location 3.jpg" alt="Enroute Location">
+            <h4>Enroute Location</h4>
+            <p>Retailer can browse the app,  find the desired product and order  </p>
+          </div>
+
+          
+
+          <div class="start">
+            <span>4</span>
+            <img src="images/Store acknowledge&pack 2.jpg" alt="Store acknowledge&pack">
+            <h4>Store acknowledge&pack</h4>
+            <p>Retailer can browse the app,  find the desired product and order  </p>
+          </div> -->
+
+
+      </div>
+
+
+    </div>
+
+
+
+    <!-- section3 ends -->
+
+    <!-- floating screen starts -->
+
+    <div class="floating-screen">
+      <h2>Our top brands</h2><br>
+      <div class="marquee">
+        <ul class="marquee-content">
+          <li><img src="images/b1.jpg" class="sizech"></li>
+          <li><img src="images/b2.jpg" class="sizech"></li>
+          <li><img src="images/b3.jpg" class="sizech"></li>
+          <li><img src="images/b4.jpg" class="sizech"></li>
+          <li><img src="images/b5.jpg" class="sizech"></li>
+          <li><img src="images/b6.jpg" class="sizech"></li>
+          <li><img src="images/b7.jpg" class="sizech"></li>
+          <li><img src="images/b8.jpg" class="sizech"></li>
+          <li><img src="images/b9.jpg" class="sizech"></li>
+          <li><img src="images/b10.jpg" class="sizech"></li>
+          <li><img src="images/b11.jpg" class="sizech"></li>
+          <li><img src="images/b13jpg.jpg" class="sizech"></li>
+          <li><img src="images/b14.jpg" class="sizech"></li>
+          <li><img src="images/b15.jpg" class="sizech"></li>
+          <li><img src="images/b16.jpg" class="sizech"></li>
+          <li><img src="images/b17.jpg" class="sizech"></li>
+          <li><img src="images/b18.jpg" class="sizech"></li>
+          <li><img src="images/b19.jpg" class="sizech"></li>
+          <li><img src="images/b20.jpg" class="sizech"></li>
+          <li><img src="images/b21.jpg" class="sizech"></li>
+          <li><img src="images/b22.jpg" class="sizech"></li>
+          <li><img src="images/b23.jpg" class="sizech"></li>
+          <li><img src="images/b24.jpg" class="sizech"></li>
+          <li><img src="images/b25.jpg" class="sizech"></li>
+          <li><img src="images/b26.jpg" class="sizech"></li>
+          <li><img src="images/b27.jpg" class="sizech"></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- floating screen ends -->
+
+
+    <!-- product categories starts  -->
+    <br>
+    <div class="p-container">
+      <h2>Our products</h2>
+      <div class="p-inner-container">
+
+        <div class="p-card">
+          <div class="p-logo"><img src="logos/Electrics & Appliances.jpg" alt="logos/Electrics & Appliances"></div>
+          <div class="p-content">
+            <h3>Electronics</h3>
+            <p>Microwave,Dishwasher,Pressure Cooker,Mixer Grinder&more</p>
+          </div>
+        </div>
+
+        <div class="p-card">
+          <div class="p-logo"><img src="logos/Footwear.jpg" alt="Footwear"></div>
+          <div class="p-content">
+            <h3>Footwear</h3>
+            <p>Male,Female & Kids footwear&more</p>
+          </div>
+        </div>
+
+        <div class="p-card">
+          <div class="p-logo"><img src="logos/Gifts & Toys.jpg" alt="logos/Gifts & Toys"></div>
+          <div class="p-content">
+            <h3>Gifts & Toys</h3>
+            <p>Car,Train,Doll,Teddy,
+              Pots&more</p>
+          </div>
+        </div>
+
+        <div class="p-card">
+          <div class="p-logo"><img src="logos/Grocery Iconsjpg.jpg" alt="Grocery Iconsjpg"></div>
+          <div class="p-content">
+            <h3>Grocery</h3>
+            <p>Flour,Pulses,Rice,Oils,Soup
+              Breakfast Foods&more</p>
+          </div>
+        </div>
+
+        <div class="p-card">
+          <div class="p-logo"><img src="logos/Hardware&Sanitary.jpg" alt="Hardware&Sanitary"></div>
+          <div class="p-content">
+            <h3>Sanitary Ware</h3>
+            <p>Seats,Tab,Sink,Tanks
+              Brass&more</p>
+          </div>
+        </div>
+
+        <div class="p-card">
+          <div class="p-logo"><img src="logos/Kidwear.jpg" alt="Kidwear"></div>
+          <div class="p-content">
+            <h3>Cloth & Apparel</h3>
+            <p>Tshirt,Jeans,Vest,Dress
+              Saree&more</p>
+          </div>
+        </div>
+
+
+        <div class="p-card">
+          <div class="p-logo"><img src="logos/luggage&Bags.jpg" alt="luggage&Bags"></div>
+          <div class="p-content">
+            <h3>Bags & Suitcase</h3>
+            <p>Handbag,Trolley Bag
+              Wheeled,luggage&more</p>
+          </div>
+        </div>
+
+
+        <div class="p-card">
+          <div class="p-logo"><img src="logos/Makeup.jpg" alt="Makeup"></div>
+          <div class="p-content">
+            <h3>Beauty Products</h3>
+            <p>Moisturizer,Cream,Powder
+              Lipstick,Lip Balm&more</p>
+          </div>
+        </div>
+
+
+        <div class="p-card">
+          <div class="p-logo"><img src="logos/Medicn.jpg" alt="Medicn"></div>
+          <div class="p-content">
+            <h3>Medicine & Cure</h3>
+            <p>Tablet,Syrup,Injection
+              Personal care&more</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- product categories starts  -->
+
+
+
+    <!-- company info starts  -->
+
+    <div class="company-info-container">
+
+      <div class="com-name">
+        <img src="images/Logo.png" width="25%" heigth="25%">
+        <h2>Welcome to Raulson</h2>
+        <h4>Har Vyavsay Ka Sathi</h4>
+      </div>
+
+
+      <div class="section-container">
+        <div class="columns image" style="background-image:url('images/Special Initiatives.gif')">
+          &nbsp;
+        </div>
+        <div class="columns content">
+          <div class="content-container">
+            <h5>Special Initiatives for small businesses</h5>
+            <p>
+              Raulson platform helps to reach wide audience, using Raulson is one of the most significant advantages is that it takes your business to people where it’s not possible for you to be present physically.<br> 
+              Raulson helps businesses in increasing revenue as your business reach widens, your customer base would grow, which will directly increase the revenue.<br> 
+              Raulson decrease Operational Cost, One of the benefits of having an online store is that you don’t have to build physical stores at all the locations where you want to sell your products, Raulson would do that for you.
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="section-container">
+        <div class="columns content">
+          <div class="content-container">
+            <h5>Empower Whole-sellers, Traders, Retailers</h5>
+            <p>
+             Raulson enables digital marketing efforts, integrate with other business solutions, and free up sales and customer service so they can focus on more value-added tasks.<br> 
+             Raulson enables manufacturers to combine their marketing sites with their purchasing sites so that customers, employees and other users don't need to switch between multiple systems.<br> 
+             Raulson provide solutions to whole-seller: (1) Consistent Buyer Interaction, (2) Create Room for Mobile Browsing, (3) Direct-to-Consumer Potential, (4) Eliminate Unnecessary Costs (5) Increase Promotional Opportunities.<br> 
+             Raulson in retailing also helps companies to move products faster and reach a larger customer base online than with traditional physical locations. 
+            </p>
+
+          </div>
+        </div>
+        <div class="columns image" style="background-image:url('images/2img.jpg')">
+          &nbsp;
+        </div>
+      </div>
+      <div class="section-container">
+        <div class="columns image" style="background-image:url('images/Shop through Mobile.gif')">
+          &nbsp;
+        </div>
+        <div class="columns content">
+          <div class="content-container">
+            <h5>Connect Whole-seller, Trader, Retailer via Mobile app</h5>
+            <p>
+             Raulson mobile app helps in meeting buyers where they are.<br> 
+             Wholesale e-commerce businesses aren't bound by physical location.<br> 
+              Raulson simplifies the buying process.<br> 
+              Raulson automates wholesale processes.<br> 
+              Raulson increases sales while lowering spend.<br>  
+              Raulson helps enter into the new markets.<br> 
+              Raulson allows customers to choose a product or service they want, from any supplier, anywhere in the India you have a much wider choice. 
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="section-container">
+        <div class="columns content">
+          <div class="content-container">
+            <h5>Best wholesale price</h5>
+            <p>
+              Available on all products from Consumer Goods to Cloth Apparel, from Medicine to Footwears, from Beauty Products to Gift & Toys.<br>
+              Grab huge discounts on your first order.<br> 
+              Upto 20% off on 2lkh products.<br>   
+              Best price ever on all products.<br> 
+              <strong>Order Now</strong>
+            </p>
+
+          </div>
+        </div>
+        <div class="columns image" style="background-image:url('images/best price.gif')">
+          &nbsp;
+        </div>
+      </div>
+      <div class="section-container">
+        <div class="columns image" style="background-image:url('images/Simple Return.gif')">
+          &nbsp;
+        </div>
+        <div class="columns content">
+          <div class="content-container">
+            <h5>Simple return process</h5>
+            <p>
+              Return Process is easy on Raulson.<br> 
+              Raulson offers free return shipping.<br>  
+              Refund credit within 5 days of returning.<br>
+              Customers can track information for their return shipment and/or automatic text alerts once their return has been received and refunded.<br> 
+
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <!--<ul>
+              <a href="#"> <li>Special Inititatives for small business</li></a>
+              <a href="#"><li>Empower Wholeseller, traders, retailers </li></a>
+              <a href="#"><li>connect Wholeseller, trader, retrailer via mobile app</li></a>
+              <a href="#"><li>Best wholesale price</li></a>
+              <a href="#"><li>Simple return process</li></a>
+            </ul>
+          </div>
+
+          <div class="com-img">
+            <img src="images/cominfo.jpg" alt="">
+          </div>-->
+
+      <!-- company info ends -->
+
+
+
+
+      <!-- footer -->
+      <!-- footer -->
+      <!-- footer -->
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="f-logo f-about">
+            <a href="#"><img src="images/Logo.png" alt=""></a>
+            <div>Raulson</div>
+            <div>Har Vyavsay ka sathi</div>
+          </div>
+          <div class="f-about">
+            <div class="f-h-about"><a href="#">About</a></div>
+            <a href="#">contact us</a>
+            <a href="#">about us</a>
+            <a href="#">Stories</a>
+            <div style="color: black;">dummy</div>
+            <div style="color: black;">dummy</div>
+
+          </div>
+
+          <div class="f-about">
+            <div class="f-h-about"><a href="#">Help</a></div>
+            <a href="#">Payment</a>
+            <a href="#">Shipping</a>
+            <a href="#">Cancellation & Return</a>
+            <a href="#">FAQ</a>
+            <a href="#">Report Infringment</a>
+          </div>
+          <div class="f-about">
+            <div class="f-h-about"><a href="#">Social</a></div>
+            <a href="#"> <i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="#"> <i class="fa-brands fa-square-twitter"></i> Twitter</a>
+            <a href="#"> <i class="fa-brands fa-square-youtube"></i> YouTube</a>
+            <div style="color: black;">dummy</div>
+            <div style="color: black;">dummy</div>
+          </div>
+
+          <div class="f-about">
+            <div class="f-h-about"><a href="#">Policy</a></div>
+            <a href="#">Raulson Policy</a>
+            <a href="#">Return Policy</a>
+            <a href="#">TRO Policy</a>
+            <a href="#">Warehouse Return Policy</a>
+            <div style="color: black;">dummy</div>
+          </div>
+
+          <div class="f-about">
+            <div class="f-h-about"><a href="#">Terms of use</a></div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Infringment policy</a>
+            <a href="#">Anti Counterfeiting Policy</a>
+            <div style="color: black;">dummy</div>
+            <div style="color: black;">dummy</div>
+          </div>
+
+
+
+
+        </div>
+        <div class="f-bottom">
+          <p>Copyright &copy; 2022 Raulson. All Right Reserved. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="ecommerce.js"></script>
+</body>
+
+</html>
